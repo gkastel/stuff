@@ -1,4 +1,5 @@
-# this is to control the 10-digit nixie-tube display from kosbotubes.com
+# this is to control the 8-digit nixie-tube  from kosbo.com : http://www.kosbo.com/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=21&category_id=6&option=com_virtuemart&Itemid=18&vmcchk=1&Itemid=18
+# It doesnt really work for me  ... 
 
 import serial
 import time
