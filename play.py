@@ -30,4 +30,3 @@ def test():
 	ser.close()
 test()
 
-

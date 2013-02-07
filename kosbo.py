@@ -23,9 +23,6 @@ def test():
 		print(chr(s[i]))
 		ser.write(s) #chr(s[i]))
 		time.sleep(1)
-
-		
 	ser.close()
-
-
 test()
+
