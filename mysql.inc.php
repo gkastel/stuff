@@ -166,27 +166,6 @@ function dbrollback() { dbquery("ROLLBACK"); }
 
 
 
-function db_store_object($table, $id, $fields)
-{
-	$q ='';
-	foreach ($fields as $f)
-	{
-		$val =  ($_REQUEST[$f]);
-		if ($q)
-			$q.=',';
-		$q .= "$f='$val'";
-	}
-	if ($id)
-	{
-		dbquery("UPDATE $table SET $q WHERE id=$id");
-		return $id;
-	}
-	else
-	{
-		dbquery("INSERT INTO $table SET $q");
-		return dbinsertid();
-	}
-}
 
 function dbinsertid(){ return mysql_insert_id(); }
 function dbaffectedrows(){ return mysql_affected_rows(); }
