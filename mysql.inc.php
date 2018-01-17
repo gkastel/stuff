@@ -1,4 +1,12 @@
-<?
+<?php
+
+
+/*
+A wrapper for mysql that uses printf-like syntax to write queries. 
+Example: $res = dbrows("SELECT count(*) cc, id from users where date > %d and status='%s' order by date desc limit %d", $dt, $status, $limit);
+*/
+
+
 $_sql_error_debug = true;
 
 
